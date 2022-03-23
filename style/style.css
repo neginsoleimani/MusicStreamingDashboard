@@ -38,6 +38,7 @@ body {
   background-color: #FFFCDC;
   display: grid;
   grid-template-columns: 0.5fr 5fr 2fr;
+  grid-template-rows: 1fr;
   font-family: var(--fontFamily);
 }
 
@@ -46,7 +47,7 @@ body {
 
 .left-aside {
   background-color: var(--backgroundColor);
-  height: 100vh;
+
   background-color: #84DFFF;
 }
 
@@ -82,8 +83,9 @@ body {
 ==================================================*/
 main {
   display: grid;
-  grid-template-rows: 1fr 0.5fr 3fr 0.5fr 2.5fr ;
+  grid-template-rows: 1fr 0.5fr 3fr 0.5fr 2.2fr ;
   grid-gap: 1rem;
+  height: 100vh;
 }
 
 .navbar {
@@ -110,9 +112,10 @@ input {
 .DiscoverYourDay {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat( 4, minmax(15rem, 10rem));
+  grid-template-columns: repeat( 4, minmax(13rem, 10rem));
   grid-gap: 2rem;
   overflow-x: scroll;
+  overflow-y:initial;
   max-width:90%;
 }
 
@@ -165,7 +168,7 @@ input {
 
 .right-aside {
   background-color: var(--backgroundColor);
-  height: 100vh;
+  height:100%;
   background-color: #84DFFF;
   display: grid;
   grid-template-rows: 0.5fr 1.5fr 6fr 1.5fr 0.1fr;
