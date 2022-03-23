@@ -82,7 +82,7 @@ body {
 ==================================================*/
 main {
   display: grid;
-  grid-template-rows: 1fr 0.5fr 3fr 0.5fr 3fr;
+  grid-template-rows: 1fr 0.5fr 3fr 0.5fr 2.5fr ;
   grid-gap: 1rem;
 }
 
@@ -108,12 +108,18 @@ input {
 }
 
 .DiscoverYourDay {
-  width: 90%;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat( 4, minmax(15rem, 10rem));
   grid-gap: 2rem;
+  overflow-x: scroll;
+  max-width:90%;
 }
+
+.DiscoverYourDay::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
 
 .DiscoverYourDay div {
   background-color: #516BEB;
@@ -140,13 +146,14 @@ input {
 }
 
 .BestAlbum {
-  width: 90%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat( 5, minmax(10rem, 8rem));
   margin: 0 auto;
-
   grid-gap: 2rem;
+  overflow-x: scroll;
+  max-width:90%;
 }
+
 .BestAlbum div {
   background-color: #EDD2F3;
   height: 10rem;
@@ -182,7 +189,7 @@ input {
 
 .LastPlayed{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns:  repeat( 4,1fr);
   grid-gap: 1rem;
 }
 .LastPlayed div{
@@ -198,4 +205,21 @@ color: black;
 
 .speakers{
 background-color: #FFFCDC;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height:5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #84DFFF;
+  opacity: 0.2;
 }
