@@ -11,23 +11,191 @@
 
 /* Google fonts & font family
 ==================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 /*
-fontfamily:;
+font-family: 'Noto Sans', sans-serif;
 */
 
 /* General
 ==================================================*/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Color themes and variables*/
-  
-  :root {}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  body {}
-  
+/* Color themes and variables*/
+
+:root {
+  --backgroundColor: "#fff";
+  --buttonColor: "#EDD2F3";
+  --fontFamily: "Noto Sans";
+}
+
+body {
+  background-color: #FFFCDC;
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 2fr;
+  font-family: var(--fontFamily);
+}
+
+/* left-aside
+==================================================*/
+
+.left-aside {
+  background-color: var(--backgroundColor);
+  height: 100vh;
+  background-color: #84DFFF;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #516BEB;
+  color: white;
+  border-radius: 5px;
+  margin: 30%;
+}
+
+.menu li {
+  padding: 18% 0;
+  list-style: none;
+  color: black;
+}
+
+.menu i {
+  font-size: 1.3rem;
+}
+
+/* main
+==================================================*/
+main {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 3fr 0.5fr 3fr;
+  grid-gap: 1rem;
+}
+
+.navbar {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 3fr;
+  width: 90%;
+  padding: 2% 0;
+}
+
+input {
+  width: 100%;
+  padding: 2% 0;
+  border-radius: 5px;
+}
+
+.title {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.DiscoverYourDay {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.DiscoverYourDay div {
+  background-color: #516BEB;
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.DiscoverYourDay p {
+  background-color: whitesmoke;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 10%;
+}
+
+.DiscoverYourDay i {
+  font-size: 2rem;
+}
+
+.BestAlbum {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+
+  grid-gap: 2rem;
+}
+.BestAlbum div {
+  background-color: #EDD2F3;
+  height: 10rem;
+  width: 100%;
+}
+
+/* right-aside
+==================================================*/
+
+.right-aside {
+  background-color: var(--backgroundColor);
+  height: 100vh;
+  background-color: #84DFFF;
+  display: grid;
+  grid-template-rows: 0.5fr 1.5fr 6fr 1.5fr 0.1fr;
+  grid-gap: 2rem;
+}
+
+.right-aside div {
+  margin: 0 auto;
+  width: 90%;
+  color: white;
+}
+
+.theme{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+}
+
+
+
+.LastPlayed{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1rem;
+}
+.LastPlayed div{
+background-color: #FFFCDC;
+height: 5rem;
+width: 100%;
+color: black;
+}
+
+.NowPlaying{
+  background-color: #516BEB;
+}
+
+.speakers{
+background-color: #FFFCDC;
+}
