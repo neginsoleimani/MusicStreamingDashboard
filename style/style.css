@@ -12,6 +12,8 @@
 /* Google fonts & font family
 ==================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
 
 /*
 font-family: 'Noto Sans', sans-serif;
@@ -30,21 +32,15 @@ font-family: 'Noto Sans', sans-serif;
 
 :root {
   --backgroundColor: "#fff";
-  --buttonColor: "#EDD2F3";
+  --borderColor: "#e9f1fb";
+  --textColor: "#8091b7";
   --fontFamily: "Noto Sans";
 }
 
 body {
-  background-image: linear-gradient(
-    to right top,
-    #471354,
-    #481464,
-    #441776,
-    #381c8a,
-    #1a249e
-  );
+  background-color: #fff;
   display: grid;
-  grid-template-columns: 0.5fr 5fr 2fr;
+  grid-template-columns: 1fr 5fr 2fr;
   grid-template-rows: 1fr;
   font-family: var(--fontFamily);
 }
@@ -53,229 +49,141 @@ body {
 ==================================================*/
 
 .left-aside {
-  background-color: #30333f;
+  background-color: #fff;
+  border-right: solid 1.5px #e9f1fb;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #f03c67;
-  color: white;
-  border-radius: 5px;
-  margin: 30%;
+  align-items: flex-start;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .menu li {
-  padding: 18% 0;
+  display: flex;
+  align-items: center;
+  padding:6% 8%;
   list-style: none;
-  color: #495560;
+  color: #3c496e;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .menu i {
-  font-size: 1.3rem;
+  padding-right: 20%;
+  font-size: 1.2rem;
+  color: #7c8db5;
 }
 
 /* main
 ==================================================*/
 main {
   display: grid;
-  grid-template-rows: 1fr 0.5fr 3fr 0.5fr 2.2fr;
+  grid-template-rows: 0.5fr 3fr 3fr;
   grid-gap: 1rem;
   height: 100vh;
 }
 
 .navbar {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr) 3fr;
+  display: flex;
+  justify-content:space-between;
   width: 90%;
   padding: 2% 0;
-  color: white;
+  color: #7c8db5;
   align-items: center;
+  font-family: 'Fredoka';
+  font-weight:800;
 }
+.navbar-text{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0.5rem;
+}
+
+.navbar-text div{
+  text-align: center;
+}
+
 
 input {
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1.5px solid #e9f1fb;
   padding: 3%;
   border-radius: 5px;
 }
 
 ::placeholder {
-  color: #fff;
+  color: black;
 }
 
-.title {
+
+.music-container{
+  margin: 0 auto;
   width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  color: white;
+  border: 1.5px solid #e9f1fb;
+  border-radius: 12px;
 }
 
-.DiscoverYourDay {
+.title{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 2% 0;
+}
+.title h4{
+color: #3c496e;
+}
+
+.title h5{
+  color:#8091b7;
+}
+.music-box{
   display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(6, minmax(13rem, 10rem));
+  grid-template-columns: repeat(4,1fr);
   grid-gap: 2rem;
-  overflow-x: scroll;
-  overflow-y: initial;
-  max-width: 90%;
-}
-
-.DiscoverYourDay::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.DiscoverYourDay div {
-  background-color: black;
-  height: 15rem;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-
-.DiscoverYourDay p {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  height: 60px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 10%;
-}
-
-.DiscoverYourDay i {
-  font-size: 2rem;
-  color: white;
-}
-
-.Discover-img {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.BestAlbum {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(10rem, 8rem));
+  width: 95%;
   margin: 0 auto;
-  grid-gap: 2rem;
-  overflow-x: scroll;
-  max-width: 90%;
+}
+.music-box .box{
+  border: 1.5px solid #e9f1fb;
+  border-radius: 12px;
+  padding: 5%;
 }
 
-.BestAlbum div {
-  background-color: black;
-  height: 10rem;
-  width: 100%;
+.img-box{
+width: 90%;
+margin: 0 auto;
+padding-top:10%;
 }
+.img-box img{
+  width: 100%;
+  border-radius: 12px;
+  }
+
+  .text-box{
+  padding-left: 10%;
+  }
+
+  .text-box h5{
+    padding-bottom: 3%;
+    color: #3c496e;
+    }
+
+    .text-box h6{
+      color: #7c8db5;
+      padding-bottom: 5%;
+      }
+  
 
 /* right-aside
 ==================================================*/
 
 .right-aside {
-  background: rgba(48, 51, 63, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  display: grid;
-  grid-template-rows: 0.5fr 1.5fr 7fr 0.5fr;
-  grid-gap: 2rem;
-}
-
-.right-aside div {
-  margin: 0 auto;
-  width: 90%;
-  color: white;
-}
-
-.theme {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 5%;
-}
-
-.LastPlayed {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  grid-gap: 1rem;
-}
-.LastPlayed div {
-  background-color: black;
-  height: 5rem;
-  width: 100%;
-  color: black;
-  width: 5rem;
-}
-
-.NowPlaying {
-  background-color: #f03c67;
-}
-
-.Music-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5%;
-}
-
-.player-btn {
-  display: flex;
-}
-
-.musicTime {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-hr{
   background-color: #fff;
-  width: 75%;
-  height:3px;
-}
-
-.player-btn div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #381c8a;
-  opacity: 0.2;
+  border-left: solid 1.5px #e9f1fb;
+  display: grid;
+  grid-gap: 2rem;
 }
