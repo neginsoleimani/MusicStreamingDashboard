@@ -123,7 +123,7 @@ input {
   margin: 0 auto;
   width: 90%;
   border: 1.5px solid #e9f1fb;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .title{
@@ -149,7 +149,7 @@ color: #3c496e;
 }
 .music-box .box{
   border: 1.5px solid #e9f1fb;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 5%;
 }
 
@@ -160,7 +160,7 @@ padding-top:10%;
 }
 .img-box img{
   width: 100%;
-  border-radius: 12px;
+  border-radius: 20px;
   }
 
   .text-box{
