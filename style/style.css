@@ -12,8 +12,8 @@
 /* Google fonts & font family
 ==================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap");
 
 /*
 font-family: 'Noto Sans', sans-serif;
@@ -57,13 +57,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 .menu li {
   display: flex;
   align-items: center;
-  padding:6% 8%;
+  padding: 6% 8%;
   list-style: none;
   color: #3c496e;
   font-weight: 600;
@@ -88,24 +88,23 @@ main {
 .navbar {
   margin: 0 auto;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 90%;
   padding: 2% 0;
   color: #7c8db5;
   align-items: center;
-  font-family: 'Fredoka';
-  font-weight:800;
+  font-family: "Fredoka";
+  font-weight: 800;
 }
-.navbar-text{
+.navbar-text {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.5rem;
 }
 
-.navbar-text div{
+.navbar-text div {
   text-align: center;
 }
-
 
 input {
   width: 100%;
@@ -118,65 +117,63 @@ input {
   color: black;
 }
 
-
-.music-container{
+.music-container {
   margin: 0 auto;
   width: 90%;
   border: 1.5px solid #e9f1fb;
   border-radius: 10px;
 }
 
-.title{
+.title {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 95%;
   padding: 2% 0;
 }
-.title h4{
-color: #3c496e;
+.title h4 {
+  color: #3c496e;
 }
 
-.title h5{
-  color:#8091b7;
+.title h5 {
+  color: #8091b7;
 }
-.music-box{
+.music-box {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   width: 95%;
   margin: 0 auto;
 }
-.music-box .box{
+.music-box .box {
   border: 1.5px solid #e9f1fb;
   border-radius: 10px;
   padding: 5%;
 }
 
-.img-box{
-width: 90%;
-margin: 0 auto;
-padding-top:10%;
+.img-box {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10%;
 }
-.img-box img{
+.img-box img {
   width: 100%;
   border-radius: 20px;
-  }
+}
 
-  .text-box{
+.text-box {
   padding-left: 10%;
-  }
+}
 
-  .text-box h5{
-    padding-bottom: 3%;
-    color: #3c496e;
-    }
+.text-box h5 {
+  padding-bottom: 3%;
+  color: #3c496e;
+}
 
-    .text-box h6{
-      color: #7c8db5;
-      padding-bottom: 5%;
-      }
-  
+.text-box h6 {
+  color: #7c8db5;
+  padding-bottom: 5%;
+}
 
 /* right-aside
 ==================================================*/
@@ -185,57 +182,83 @@ padding-top:10%;
   background-color: #fff;
   border-left: solid 1.5px #e9f1fb;
   display: grid;
-  grid-template-rows: 0.5fr 1.5fr 2fr 3fr;
+  grid-template-rows: 0.5fr 1fr 2fr 3fr;
   grid-gap: 0.5rem;
 }
 
-.notification{
+.notif-bar {
   display: flex;
   justify-content: space-between;
   width: 85%;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 5% 0;
 }
 
-.notif-box-container{
+.notif-box-container {
   display: grid;
   width: 85%;
-  margin:  0 auto;
-  grid-template-rows:1fr 1fr ;
+  margin: 0 auto;
+  grid-template-rows: 1fr 1fr;
 }
 
-.notif-box{
-display: grid;
-grid-template-columns:0.5fr 2fr 1fr;
-align-items: center;
+.notif-box {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  align-items: center;
 }
 
-.notif-box-img{
+.notif-box-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
-  height:50px;
+  height: 50px;
   background-color: #e9f1fb;
   border-radius: 16px;
   color: #7c8db5;
 }
 
-.notif-box-img{
+.notif-box-img {
   font-size: 1.3rem;
   color: #7c8db5;
 }
 
-
-.notif-text{
+.notif-text {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-#notif-time{
+.notif-time {
   color: #7c8db5;
-  display:grid;
+  display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: flex-end;
- 
+}
+
+.TopArtists-container{
+display: grid;
+grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.Topart-box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+  padding-bottom: 7%;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.Topart-box div{
+margin: 0 auto;
+width:75px;
+height:75px;
+border-radius: 16px;
+text-align: center;
+  background-size: cover;
+}
+
+.Topart-box h6{
+padding: 3% 0;
 }
