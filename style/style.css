@@ -50,7 +50,7 @@ body {
 
 .left-aside {
   background-color: #fff;
-  border-right: solid 1.7px #e9f1fb;
+  border-right: solid 1.5px #e9f1fb;
 }
 
 .menu {
@@ -109,7 +109,7 @@ main {
   margin: 0 auto;
   width: 90%;
   padding: 3% 0;
-  border: 1.7px solid #e9f1fb;
+  border: 1.5px solid #e9f1fb;
   border-radius: 10px;
 }
 
@@ -135,7 +135,7 @@ main {
   margin: 0 auto;
 }
 .music-box .box {
-  border: 1.7px solid #e9f1fb;
+  border: 1.5px solid #e9f1fb;
   border-radius: 10px;
   padding: 5%;
 }
@@ -179,7 +179,7 @@ main {
 }
 
 .Pecent-play-box i {
-  border: solid 1.7px #e9f1fb;
+  border: solid 1.5px #e9f1fb;
   width: 50px;
   height: 50px;
   border-radius: 16px;
@@ -214,7 +214,7 @@ main {
 
 .right-aside {
   background-color: #fff;
-  border-left: solid 1.7px #e9f1fb;
+  border-left: solid 1.5px #e9f1fb;
   display: grid;
   grid-template-rows: 0.25fr 0.7fr 1.5fr 3fr;
 }
