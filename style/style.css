@@ -50,7 +50,7 @@ body {
 
 .left-aside {
   background-color: #fff;
-  border-right: solid 1.5px #e9f1fb;
+  border-right: solid 1.7px #e9f1fb;
 }
 
 .menu {
@@ -105,22 +105,11 @@ main {
   text-align: center;
 }
 
-input {
-  width: 100%;
-  border: 1.5px solid #e9f1fb;
-  padding: 3%;
-  border-radius: 5px;
-}
-
-::placeholder {
-  color: black;
-}
-
 .music-container {
   margin: 0 auto;
   width: 90%;
   padding: 3% 0;
-  border: 1.5px solid #e9f1fb;
+  border: 1.7px solid #e9f1fb;
   border-radius: 10px;
 }
 
@@ -129,7 +118,7 @@ input {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  padding-bottom: 2% ;
+  padding-bottom: 2%;
 }
 .title h4 {
   color: #3c496e;
@@ -146,7 +135,7 @@ input {
   margin: 0 auto;
 }
 .music-box .box {
-  border: 1.5px solid #e9f1fb;
+  border: 1.7px solid #e9f1fb;
   border-radius: 10px;
   padding: 5%;
 }
@@ -175,12 +164,57 @@ input {
   padding-bottom: 5%;
 }
 
+.Recent-play {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.Pecent-play-box {
+  padding: 2% 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 4fr 0.5fr 1fr;
+  text-align: center;
+  color: #7c8db5;
+}
+
+.Pecent-play-box i {
+  border: solid 1.7px #e9f1fb;
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.recent-play-textbox {
+  display: flex;
+  align-items: center;
+}
+
+.recent-play-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+}
+
+.recent-play-img img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.recent-textbox {
+  padding-left: 2%;
+}
+
 /* right-aside
 ==================================================*/
 
 .right-aside {
   background-color: #fff;
-  border-left: solid 1.5px #e9f1fb;
+  border-left: solid 1.7px #e9f1fb;
   display: grid;
   grid-template-rows: 0.25fr 0.7fr 1.5fr 3fr;
 }
@@ -332,48 +366,3 @@ input {
   justify-content: center;
   align-items: center;
 }
-
-.Recent-play{
-  margin: 0 auto;
-  width: 95%;
-}
-
-.Pecent-play-box{
-  padding:2% 0;
-display: grid;
-align-items: center;
-grid-template-columns: 0.5fr 4fr 0.5fr 1fr ;
-text-align: center;
-color: #7c8db5;
-}
-
-.Pecent-play-box i{
-  border: solid 1.5px #e9f1fb;
-  width: 50px;
-  height: 50px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  }
-
-  .recent-play-textbox{
-    display: flex;
-    align-items: center;
-  }
-
-  .recent-play-img{
-    width: 50px;
-    height: 50px;
-    border-radius: 16px;
-  }
-
-  .recent-play-img img{
-   width: 100%;
-    border-radius: 16px;
-  }
-
-  .recent-textbox{
-    padding-left: 2%;
-  }
